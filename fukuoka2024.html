@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bóng Bàn Giải WTT Finals</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background-color: orange; /* Màu nền của tiêu đề */
+            color: white; /* Màu chữ trong tiêu đề */
+        }
+
+        .header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #f2f2f2;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            display: none;  /* Ẩn menu thả xuống */
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 160px; /* Đặt chiều rộng menu thả xuống */
+        }
+
+        .dropdown li {
+            float: none;
+        }
+
+        nav li:hover .dropdown {
+            display: block; /* Hiển thị menu thả xuống khi hover qua mục cha */
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>WTT FINALS FUKUOKA 2024</h1>
+</div>
+<style>nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 160px;
+}
+
+.dropdown li {
+    float: none;
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bóng Bàn Giải WTT Finals</title>
+     
+    <link rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="trangchu..html">Trang Chủ</a></li>
+         <li><a href="gtbt.html">GTBT</a></li>
+  <li><a href="fukuoka2024.html">Tổng Quan Về GIải Đấu</a></li>
+        <li>
+            <a href="#">Đơn Nam</a>
+            <ul class="dropdown">
+                <li><a href="r16 đơn nam.html">Vòng 16</a></li>
+                <li><a href="tứ kết đơn nam.html">Tứ kết</a></li>
+                <li><a href="bán kết đơn nam.html">Bán kết</a></li>
+                <li><a href="chung kết đơn nam.html">Chung kết</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Đơn Nữ</a>
+            <ul class="dropdown">
+                <li><a href="r16 đơn nữ.html">Vòng 16</a></li>
+                <li><a href="tứ kết đơn nữ.html">Tứ kết</a></li>
+                <li><a href="bán kết đơn nữ.html">Bán kết</a></li>
+                <li><a href="chung kết đơn nữ.html">Chung kết</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Đôi Nam</a>
+            <ul class="dropdown">
+                <li><a href="#">Tứ kết</a></li>
+                <li><a href="#">Bán kết</a></li>
+                <li><a href="#">Chung kết</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Đôi Nữ</a>
+            <ul class="dropdown">
+                <li><a href="#">Tứ kết</a></li>
+                <li><a href="#">Bán kết</a></li>
+                <li><a href="#">Chung kết</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Tổng Kết Mùa Giải</a>
+         <ul class="dropdown">
+                <li><a href="#">Đơn Nam</a></li>
+                <li><a href="#">Đơn Nữ</a></li>
+                <li><a href="#">Đôi Nam</a></li> 
+                <li><a href="#">Đôi Nữ</a></li>
+            </ul>
+    </ul>
+
+
+</nav>
+</div>
+<h2>  Tổng Quan Về Giải Đấu WTT FUKUOKA 2024</h2>
+
+<p><i style="color:blue">"WTT FUKUOKA 2024"</i> Là giải đấu khép lại hệ thống WTT Series 2024 giải đấu sẽ có hai sự kiện dành cho nam và nữ quy tụ các vận động viện trong top bảng xếp hạng thế giới.Vận động viên không tham gia thì sẽ tự động tính theo xếp hạng kế tiếp đến khi đủ số lượng. </p>
+    </header>
+    <main>
+        <section class="about-me">
+           <img src="https://i.imgur.com/LdC0Jhe.png" style="" width="700px">
+
+            
+        
+
+
+            
+        
+            <p><strong style="color:red"> Nội dung thi đấu:</strong>Đơn nam/nữ,đôi nam/nữ</p>
+            
+            <p><strong style="color:red">Ngày diễn ra:</strong> từ 20/11-24/11 </p>
+            <p><strong style="color:red">Số vận động viên tham gia:</strong>
+                <ul>
+                <li>Nam, nữ đơn: Top 16 bảng xếp hạng thế giới.</li>
+                <li>Đôi nam, đôi nữ: Top 8 bảng xếp hạng thế giới.</li>
+            </ul>
+            </p>
+            <p><strong style="color:red">Tiền thưởng USD và điểm đơn nam/nữ:
+                                                             :</strong>
+            
+ <ul>
+                    <li>Quán quân: 40000 - 1500 điểm</li>
+                     <li>Á quân: 33000 - 1050</li> 
+                     <li>SF: 25500 - 525</li> 
+                     <li>QF: 18000 - 265</li>
+                     <li>R16: 12500 - 100</li>
+                    
+
+                </ul> 
+                <p><strong style="color:red">Tiền thưởng USD và điểm đôi đơn/nữ:
+:</strong>
+            
+                <ul>
+                    <li>Quán quân: 8000 - 1500 điểm
+</li>
+                    <li>Á quân: 6000 - 1050 
+</li>
+                    <li>SF: 4250 - 525 
+</li>
+                    <li>QF: 3500 - 100
+</li>
+                   
+                    
+
+                </ul>
+            <p><strong style="color:red">Thể thức thi đấu:</strong>
+                <ul>
+                    <li>Đối với nội dung đôi:BO5
+</li>
+                    <li>Đối với nội dung đơn:
+</li>
+                    <li>R16,QF:BO5
+</li>
+                    <li>Bán kết,chung kết: BO7
+</li>
+                   
+                    
+
+                </ul>
+<p><strong style="color:red">Địa điểm thi đấu:</strong>Nhà thi đấu Kitakyushu-Japan </p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danh sách vận động viên</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;   
+
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>   
+
+</head>
+<body>
+
+<h4 style="color: red">Danh sách vận động viên tham gia:</h4>
+
+<table >
+  <tr>
+    <th>Tên vận động viên</th>
+    <th>Quốc tịch</th>
+    <th>Top</th>
+    <th>Nội dung thi đấu</th>
+  </tr>
+  <tr>
+
+    <td>Wang Chuqin</td>
+    <td>Trung Quốc</td>
+    <td>1</td>
+    <td>Đơn nam</td>
+  </tr>
+   <tr>
+
+    <td>Lin Shidong</td>
+    <td>Trung Quốc</td>
+    <td>2</td>
+    <td>Đơn nam</td>
+  </tr>
+   <tr>
+
+    <td>Fleix Lebrun</td>
+    <td>Pháp</td>
+    <td>3</td>
+    <td>Đơn nam</td>
+  
+
+  </tr>
+    <tr>
+
+
+    <td>Liang Jingkun</td>
+    <td>Trung Quốc</td>
+    <td>4</td>
+    <td>Đơn nam</td>
+  </tr>
+
+  <tr>
+
+
+    <td>Hugo Calderano</td>
+    <td>Brazil</td>
+    <td>5</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+    
+
+    <td>Tomokazu Harimoto</td>
+    <td>Nhật Bản</td>
+    <td>6</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+    <td>Lin Gaoyuan</td>
+    <td>Trung Quốc</td>
+    <td>7</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+
+    <td>Truls Moregard</td>
+    <td>Thụy Điển</td>
+    <td>8</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+  
+
+    <td>Patrick Franzisla</td>
+    <td>Đức</td>
+    <td>9</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+    
+  
+
+    <td>Dang Kiu</td>
+    <td>Đức</td>
+    <td>10</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+    
+
+    <td>Lin Yun Ju</td>
+    <td>Đài Loan</td>
+    <td>11</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+    
+
+    <td>Alexis Lebrun</td>
+    <td>Pháp</td>
+    <td>12</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+  
+
+    <td>Jang Woo Jin</td>
+    <td>Hàn Quốc</td>
+    <td>13</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+
+    <td>Darko Jogic</td>
+    <td>Slovenia</td>
+    <td>14</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+  
+
+    <td>Anton Kallberg</td>
+    <td>Thụy Điển</td>
+    <td>15</td>
+    <td>Đơn nam</td>
+  </tr>  <tr>
+
+
+    <td>Benedikt Duda</td>
+    <td>Đức</td>
+    <td>16</td>
+    <td>Đơn nam</td>
+  </tr>
+  </table>
+<table>
+  <tr>
+    <th>Tên vận động viên</th>
+    <th>Quốc tịch</th>
+    <th>Top</th>
+    <th>Nội dung thi đấu</th>
+  </tr>
+   <tr>
+
+    <td>Sun Yingsha</td>
+    <td>Trung Quốc</td>
+    <td>1</td>
+    <td>Đơn nữ</td>
+  </tr>
+   <tr>
+
+    <td>Wang Manyu</td>
+    <td>Trung Quốc</td>
+    <td>2</td>
+    <td>Đơn nữ</td>
+
+   
+   <tr>
+
+    <td>Wang Yidi</td>
+    <td>Trung Quốc</td>
+    <td>3</td>
+    <td>Đơn nữ</td>
+  
+
+  </tr>
+    <tr>
+
+
+    <td>Hina Hayata</td>
+    <td>Nhật Bản</td>
+    <td>4</td>
+    <td>Đơn nữ</td>
+  </tr>
+
+  <tr>
+
+
+    <td>Miwa Harimoto</td>
+    <td>Nhật Bản</td>
+    <td>5</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+    
+
+    <td>Chen Xingtong</td>
+    <td>Trung Quốc</td>
+    <td>6</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+    <td>Satsuki Odo</td>
+    <td>Nhật Bản</td>
+    <td>7</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+
+    <td>Cheng I Ching</td>
+    <td>Đài Loan</td>
+    <td>8</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+  
+
+    <td>Mima Ito</td>
+    <td>Nhật Bản</td>
+    <td>9</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+    
+  
+
+    <td>Shin Yubin</td>
+    <td>Hàn Quốc</td>
+    <td>10</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+    
+
+    <td>Qian Tianyi</td>
+    <td>Trung Quốc</td>
+    <td>11</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+    
+
+    <td>Miu Hirano</td>
+    <td>Nhật Bản</td>
+    <td>12</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+  
+
+    <td>Sofia Polcanova</td>
+    <td>Aó</td>
+    <td>13</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+
+    <td>Adriana Diaz</td>
+    <td>Puerto Rico</td>
+    <td>14</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+  
+
+    <td>Joen Jihee</td>
+    <td>Hàn Quốc</td>
+    <td>15</td>
+    <td>Đơn nữ</td>
+  </tr>  <tr>
+
+
+    <td>Bernade Szocs</td>
+    <td>Romania</td>
+    <td>16</td>
+    <td>Đơn nữ</td>
+  </tr>
+ 
+  </table>
+
+<table>
+  <tr>
+    <th>Tên vận động viên</th>
+    <th>Quốc tịch</th>
+    <th>Top</th>
+    <th>Nội dung thi đấu</th>
+  </tr>
+    <tr>
+
+    <td>Xieng Peng/Yuan Licen</td>
+    <td>Trung Quốc</td>
+    <td>1</td>
+    <td>Đôi nam</td>
+  </tr>
+   <tr>
+
+    <td>Felix Lebrun/Alexis Lebrun</td>
+    <td>Pháp</td>
+    <td>2</td>
+    <td>Đôi nam</td>
+  </tr>
+   <tr>
+
+    <td>Lin Gaoyuan/Lin Shidong</td>
+    <td>Trung Quốc</td>
+    <td>3</td>
+    <td>Đôi nam</td>
+  
+
+  </tr>
+    <tr>
+
+
+    <td>Hiroto Shinozuka/Shunsuke Togami</td>
+    <td>Nhật Bản</td>
+    <td>4</td>
+    <td>Đôi nam</td>
+  </tr>
+
+  <tr>
+
+
+    <td>Anton Kallberg/Kristian Karlsson</td>
+    <td>Thụy Điển</td>
+    <td>5</td>
+    <td>Đôi nam</td>
+  </tr>  <tr>
+
+    
+
+    <td>Pang Koen/Quek izaac</td>
+    <td>Singapo</td>
+    <td>6</td>
+    <td>Đôi nam</td>
+  </tr>  <tr>
+
+    <td>Florian Bourrassaud/Esteban Dorr</td>
+    <td>Pháp</td>
+    <td>7</td>
+    <td>Đôi nam</td>
+  </tr>  <tr>
+
+
+    <td>Tomokazu Harimoto/Sora Matsushima</td>
+    <td>Nhật Bản</td>
+    <td>8</td>
+    <td>Đôi nam</td>
+<table>
+  <tr>
+    <th>Tên vận động viên</th>
+    <th>Quốc tịch</th>
+    <th>Top</th>
+    <th>Nội dung thi đấu</th>
+    </tr>
+
+    <td>Shin Yubin/Jeon Jihee</td>
+    <td>Hàn Quốc</td>
+    <td>1</td>
+    <td>Đôi nữ</td>
+  </tr>
+   <tr>
+
+    <td>Li Yu Jhun/Cheng I Ching</td>
+    <td>Đài Loan</td>
+    <td>2</td>
+    <td>Đôi nữ</td>
+  </tr>
+   <tr>
+
+    <td>Sakura Yokoi/Satsuki Odo</td>
+    <td>Nhật Bản</td>
+    <td>3</td>
+    <td>Đôi nữ</td>
+  
+
+  </tr>
+    <tr>
+
+
+    <td>Qian Tianyi/Chen Xingtong</td>
+    <td>Trung Quốc</td>
+    <td>4</td>
+    <td>Đôi nữ</td>
+  </tr>
+
+  <tr>
+
+
+    <td>Miyuu Kihara/Miyu Nagasaki</td>
+    <td>Nhật Bản</td>
+    <td>5</td>
+    <td>Đôi nữ</td>
+  </tr>  <tr>
+
+    
+
+    <td>Barbora Balazova/Hanab Matelova</td>
+    <td>Slovakia</td>
+    <td>6</td>
+    <td>Đôi nữ</td>
+  </tr>  <tr>
+
+    <td>Hitomi Sato/Honoka Hashimoto</td>
+    <td>Nhật Bản</td>
+    <td>7</td>
+    <td>Đôi nữ</td>
+  </tr>  <tr>
+
+
+    <td>Wang Yidi/Sun Yingsha</td>
+    <td>Trung Quốc</td>
+    <td>8</td>
+    <td>Đôi nữ</td>
+  </tr>
+    <tr>
+
+  </tr>
+
+  
+</table>
+
+
+
+<div class="footer">
+  <p>© 2024 WTT Finals Fukuoka 2024.</p>
+
+
+
+            
+        
+                        <h2>Hãy Theo Dõi Trang Để Cập Nhật Những Thông Tin Mới Nhất Của Giải Đấu WTT FINALS Nhé!</h2>
+        </section>
+    </main>
+    <footer>
+    <script src="script.js"></script>
+  </body>
+
+</html>
